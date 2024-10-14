@@ -12,7 +12,6 @@
     />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../CSS/index.css" />
-    <link rel="stylesheet" href="../JS/index.js">
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
@@ -23,15 +22,15 @@
         </div>
         <nav id="nav">
         <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#sobremi">SOBRE MI</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#curriculum">CURRICULUM</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
         </ul>
         </nav>
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
@@ -369,37 +368,90 @@
             <h2>PORTFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="../images/proyecto1.jpg" alt="proyecto1">
+                    <img src="../images/My portafolio.png" alt="proyecto1">
                     <div class="overlay">
-                        <h3>Diseño Web</h3>
+                        <h3>Diseño Web de portafolio</h3>
                         <p>Proyecto 1</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="../images/proyecto2.jpg" alt="proyecto2">
+                    <img src="../images/proyecto tienda de ropa.png" alt="proyecto2">
                     <div class="overlay">
-                        <h3>Diseño Web</h3>
+                        <h3>Diseño Web tienda de ropa</h3>
                         <p>Proyecto 2</p>
                     </div>
                 </div>
             
                 <div class="proyecto">
-                    <img src="../images/proyecto2.jpg" alt="proyecto2">
+                    <img src="../images/proyecto tienda de productos.png" alt="proyecto3">
                     <div class="overlay">
-                        <h3>Diseño Web</h3>
+                        <h3>Diseño Web tienda de productos</h3>
                         <p>Proyecto 3</p>
                     </div>
                 </div>
 
                 <div class="proyecto">
-                    <img src="../images/proyecto2.jpg" alt="proyecto2">
+                    <img src="../images/Proyecto de relojes.png" alt="proyecto4">
                     <div class="overlay">
-                        <h3>Diseño Web</h3>
+                        <h3>Diseño Web relojes</h3>
                         <p>Proyecto 4</p>
                     </div>
                 </div>
             </div>
-    <main></main>
-    <footer></footer>
-    </body>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Telelefono">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- mapa -->
+                <div class="col">
+                <img src="../images/ubi.mapa.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            San miguel de tucuman, Argentina
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            +54 381624282
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            gonchimartinez9@gmail
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+    </section>
+
+<footer>
+    <a href="#inicio"class="arriba">
+        <i   i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.instagram.com/gonchi_martinezz/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/gonzalomartinez9/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/GonzaloMartinezz"><i class="fa-brands fa-github"></i></a>
+    </div>  
+</footer>
+
+    <script src="../JS/index.js"></script>
+</body>
 </html>
