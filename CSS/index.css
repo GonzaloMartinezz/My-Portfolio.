@@ -106,7 +106,6 @@ html{
     background-color: #1CB698;
 } 
 /* SECCION SOBRE MI */
-
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -130,6 +129,11 @@ html{
 .sobremi .contenido-seccion p span{
     color: #1CB698;
     font-weight: bold; 
+}
+.sobremi .mail{
+    color: #c21111;
+    font-weight: bold;
+    text-decoration: none;
 }
 .sobremi .fila{
     display: flex;
@@ -542,4 +546,60 @@ html{
     position: relative;
     bottom: 4px;
 }
+/* SECCION PORTAFOLIO */
+.portafolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portafolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portafolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portafolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    margin: 10px;
+    cursor: pointer;
+}
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    opacity: 0;
+}
+.portafolio .galeria .proyecto .overlay h3{
+    color: #fff;
+    font-weight: 400;   
+}
+.portafolio .galeria .proyecto .overlay p{  
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.portafolio .galeria .proyecto:hover .overlay{
+    opacity: 1;
+}
 
+/* SECCION CONTACTO */
